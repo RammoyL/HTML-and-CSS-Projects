@@ -1,14 +1,16 @@
-/*------------------------------------------
-GENERIC STYLES
-------------------------------------------*/
 html {
-    font-family: sans-serif;
-    font-size: 62.54;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13.48px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
+em {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: medium;
+}
 body {
     font-size: 14px;
     margin: 0;
@@ -33,7 +35,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
+    color: #181818;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,14 +44,14 @@ h1::after {
     content: " ";
     height: 2px;
     width: 150px;
-    background: #E91C1C;
+    background: #574f4f6b;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     line-height: 50px;
-    color:#E91C1C;
+    color: #214ecaad;
 }
 
 h3 {
@@ -109,7 +111,8 @@ section {
     margin-left: -15px;
 }
 
-.clearfix::after, /*after is now ::after with a double colon */
+.clearfix::after,
+/*after is now ::after with a double colon */
 .container::after,
 .navbar::after {
     clear: both;
@@ -136,17 +139,14 @@ section {
     content: " ";
     /*top: 0;
     left: 0;*/
-    /*position: absolute; */ /*to the top edge of the screen */
+    /*position: absolute; */
+    /*to the top edge of the screen */
     width: 100%;
     position: fixed;
     z-index: 100;
 }
-
-/*-------------------------------------------------
-HOME SECTION STYLES
--------------------------------------------------*/
 #home {
-    background: url(https://images.wallpapersden.com/image/download/close-planet_bGpla2eUmZqaraWkpJRqaWWtbmtlZmtuZ2dl.jpg) no-repeat 50% 50%;
+    background: url(https://i.pinimg.com/originals/b9/1d/ec/b91deca9addef966e7c142cef88170cb.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -155,8 +155,10 @@ HOME SECTION STYLES
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 350px; /*This is a spacer before the main title logo */
-    padding-bottom: 500px; /*This is a spacer after the main title logo */
+    padding-top: 350px;
+    /*This is a spacer before the main title logo */
+    padding-bottom: 500px;
+    /*This is a spacer after the main title logo */
     color: #fff;
 }
 
@@ -264,7 +266,7 @@ Contact STYLES
 .reservation input[type="text"] {
     font-size: 15px;
     outline: none;
-    font-weight: 600;
+    font-weight: 400;
     color: #8D8E8F;
     padding: 2% 1% 2% 7%;
     width: 80%;
@@ -273,10 +275,10 @@ Contact STYLES
     border-bottom: 2px solid #424549;
     border-left: 1px solid #090B0D;
     margin: 10px 1em;
-    border-radius:7px;
+    border-radius: 7px;
     background: #13161B;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-    font-family: 'Raleway', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .reservation input[type="text"]:hover {
