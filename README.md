@@ -1,2 +1,2 @@
 # HTML and CSS Projects
- Saved files in HTML/CSS
+This is a display of sample websites that I made using HTML & CSS.
