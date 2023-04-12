@@ -13,6 +13,6 @@ This is a display of sample websites that I made using HTML & CSS.
   <h2>Home Page Site</h2>
   This page is an example home page for a Space travel company. Its styled using CSS and contains a navbar, image contaienr, a form, page animation & embedded video.
   <h2>Space Station Site</h2>
-  <p>This page is an example home page for a Space travel company. Its styled using CSS and contains a navbar, image contaienr, and a form.</p>
+  <p>This page is an example home page for a Space travel company. Its styled using CSS and contains a navbar, image container, and a form.</p>
   <h2>Movie Theather Site</h2>
   This page is an example home page for a Movie theater that is styled using Bootstrap 4. It contains many Booststrap components including but not limited to navbar, jumbotron, form, cards, and dropdowns.
