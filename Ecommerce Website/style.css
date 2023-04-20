@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
+* { /*This section resets margin, padding, and box-sizing for all elements*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
 
-h1 {
+h1 { /*This section defines styles for heading elements (h1, h2, h4, and h6), including font size, line height, and color*/
     font-size: 50px;
     line-height: 64px;
     color: #222;
@@ -35,15 +35,15 @@ p {
     margin: 15px 0 20px 0;
 }
 
-.section-p1 {
+.section-p1 { /*This section defines padding and margin for section elements with class "section-p1" and "section-m1"*/
     padding: 40px 80px;
 }
 
-.section-m1 {
+.section-m1 { 
     margin: 40px 0;
 }
 
-button.normal {
+button.normal { /*This section defines styles for button elements with class "normal*/
     font-size: 12px;
     font-weight: 525;
     padding: 16px 20px;
@@ -56,7 +56,7 @@ button.normal {
     transition: .2s;
 }
 
-button.white {
+button.white { /*This section defines styles for button elements with class "white" including cursor, border, outline, and transitions.*/
     font-size: 11px;
     font-weight: 525;
     padding: 10px 16px;
@@ -75,7 +75,7 @@ body {
 
 /* Header Start */
 
-#header{
+#header{ /*This section defines styles for the header element (with id "header"), including display, alignment, padding, background color, box shadow, z-index, position, and sticky behavior.*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,7 +88,7 @@ body {
     left: 0;
 }
 
-#navbar{
+#navbar{ /*This section defines styles for the navbar element (with id "navbar") and its child list items (li), including display, alignment, padding, and relative positioning*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,21 +110,22 @@ body {
 }
 
 #navbar li a:hover,
-#navbar li a.active {
+#navbar li a.active { /*This sets the color of the text to #1175e7 (a shade of blue) when a link inside the navbar is hovered over or when it is active*/
     color: #1175e7;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after {
-    content: "";
+#navbar li a:hover::after { /*This adds a pseudo-element (::after) to the links inside the navbar when they are active or hovered over*/
+    content: ""; /*The pseudo-element is empty and has a width of 40%, height of 2px, and a background color*/
     width: 40%;
     height: 2px;
     background: #1175e7;
-    position: absolute;
+    position: absolute; /*positioned absolutely at the bottom -4px and left 11px of the parent element, creating an underline effect below the links*/
     bottom: -4px;
     left: 11px
 }
 
+/*These lines hide the elements with IDs "mobile" and "close" by setting their display property to "none", making them not visible on the web page*/
 #mobile {
     display: none;
     align-items: center;
@@ -134,69 +135,71 @@ body {
     display: none;
 }
 
-/* Home Page */
+/* Home Page This styles the element with ID "hero" as the hero section of a web page*/
 #hero{
     background-image: url(./img/people/hero.jpg);
     height: 100vh;
     width: 100%;
-    background-size: cover;
+    background-size: cover; /*It sets the background size to cover, so the image covers the entire element*/
     background-position: top 25% right 0;
     padding: 0 80px;
-    display: flex;
+    display: flex; /*It displays the element as a flex container with flex-direction set to column, align-items set to flex-start 
+    (aligning items to the left), and justify-content set to center (centering items vertically)*/
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; 
     justify-content: center;
 }
 
-#hero h4{
+#hero h4{ /*This adds padding of 9 pixels at the bottom of the h4 element inside the element*/
     padding-bottom: 9px;
 }
 
-#hero h1 {
+#hero h1 { /*This sets the color of the h1 element inside the element with ID and sets the opacity*/
     color: #fa8072;
     opacity: .75;
 }
 
-#hero button {
+#hero button { /*This styles the button element inside the element within ID*/
     background-image: url(./img/logoandbutton/button.png);
     background-color: transparent;
     color: #1175e7;
     border: 0;
     padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-repeat: no-repeat; /*It sets the background image to not repeat*/
+    cursor: pointer; /*It sets the cursor to a pointer, indicating it is clickable.*/
     font-weight: 515;
     font-size: 15px;
 }
 
-#hero button:hover {
+#hero button:hover { /*This sets the color of the button element inside the element with ID "hero" to azure when the button is hovered over*/
     color: azure;
-    transition: .3s;
+    transition: .3s; /*It adds a transition effect of 0.3 seconds to smoothly animate the color change.*/
 }
 
-#feature {
-    display: flex;
+#feature { /*This styles the element with ID "feature" as a flex container*/
+    display: flex; /*t sets the display property to flex, making its children elements flex items*/
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*It allows the children elements to wrap to the next line if they exceed the container's width*/
 }
 
-#feature .fe-box {
+#feature .fe-box { /*This styles the elements with class "fe-box" inside the element with ID "feature"*/
     width: 180px;
     text-align: center;
-    padding: 20px 10px;
-    box-shadow: 18px 18px 32px rgba(0, 0, 0, 0.03);
+    padding: 20px 10px; /*It adds padding of 20px on the top and bottom, and 10px on the left and right*/
+    box-shadow: 18px 18px 32px rgba(0, 0, 0, 0.03); /*It adds a box shadow with an offset of 18px on the top and right, with a blur radius of 32px*/
     border: 1px solid #cce7d0;
     border-radius: 3px;
     margin: 15px 0;
 }
 
-#feature .fe-box:hover {
+#feature .fe-box:hover { /*This sets the box shadow of the elements with class "fe-box" inside the element with ID "feature" when they are hovered over.
+It sets the box shadow to 10px on the top and right, with a blur radius of 54px*/
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
 
-#feature .fe-box img {
-    width: 100%;
+#feature .fe-box img { /*This styles the images inside the elements with class "fe-box" inside the element with ID "feature"*/
+    width: 100%; /*It sets the width of the images to 100%, making them responsive and fill the width of their container*/
     margin-bottom: 10px;
 }
 
